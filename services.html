@@ -1,0 +1,233 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+	     <title>services</title>
+		 <!--<script>
+		        function bigImg(x) {
+                x.style.height = "55px";
+                x.style.width = "125px";
+                }
+                 function normalImg(x) {
+                x.style.height = "60px";
+                x.style.width = "130px";
+                }
+		  
+		  </script> -->
+		 
+		 
+		 <style>
+		        *{
+				         margin:0px;
+					     padding:0;
+				 }
+				 body{
+				         background-color:	 #f5f5f5;
+				 }
+				 
+				 .navbar li{
+				         list-style: none;
+						 margin: 0 50px;
+						 font-size:25px;
+				  }	
+				 
+ 				 .justify-between{
+            			  display: flex;
+				          justify-content: space-evenly;
+					    /*  background-image: url('image.jpg');
+						  background-repeat:no-repeat;    
+	                      background-size:100%;
+	                      background-attachment:fixed;*/
+							
+				  }
+				  
+				  .navbar{
+				         display: flex;
+						 padding: 16px 31px 34px 0px; 
+						 align-items: flex-end;
+				  }
+				  
+				  nav a {
+                        text-decoration: none;
+                        color: #333;
+                        font-weight: bold;
+                  }
+				  
+				   nav a:hover{
+				      color:red;
+				  }
+				  
+				  .bg-red{
+				         display: flex;
+				         align-items: center;
+						 padding:5px 7px ;
+							
+				  }
+				  
+				  .btn{
+				         padding: 4px 12px;
+						 border: 2px solid #003399;
+						 color: white;
+						 background-color: #8787ab;
+						 border-radius:39px;
+						 cursor:pointer;
+						 height:60px;
+						 width:130px;
+				  }
+				  
+				  .dbtn{
+				         display: flex;
+						 align-items:center;
+				  }
+
+
+                  #serh1 {
+                        font-size: 28px;
+                        margin:50px 0px;
+	                    text-align:center;
+                  }
+
+                 .secservice{
+                        display:flex;
+                        justify-content: space-evenly;
+	                    margin-bottom:30px;
+	              }
+
+                 .services{
+                        display:flex;
+	                    flex-direction: column;
+	                    border:1px solid black;
+	                    box-sizing: border-box;
+					    box-shadow: 5px 10px 3px #a0a0ac;
+						border-radius:12px;
+                  }
+				  
+				  .services:hover {
+                       background-color: #afafcf;
+					   box-shadow: 5px 10px 5px #888888;
+					   width:300px;
+					   height:350px;
+                  }
+
+                 #serviceh2{
+                    	padding:20px 30px 20px 80px;
+	                   text-decoration: underline;
+                  }
+
+                 section h2 {
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                  }
+
+                 .services ol {
+                        margin-left: 20px;
+                  }
+
+                .services li {
+                        margin-bottom: 5px;
+                        padding-left: 15px;
+                        position: relative;
+                 }
+
+                 footer {
+                       background-color: #e6e6e6;
+                       padding: 20px;
+                       text-align: center;
+                 }
+
+                .social-icons a {
+                       display: inline-block;
+                       margin: 0 10px;
+                 }
+
+                .social-icons img {
+                       width: 30px;
+                       height: 30px;
+	                   border-radius: 50px;
+                 }
+
+                .contact-info p {
+                       margin: 5px 0;
+                       font-size: 14px;
+                 }
+
+                .copyright p {
+                       margin: 5px 0;
+                       font-size: 12px;
+                       color: #777;
+                 }
+		       
+		       
+		 </style>
+	</head>
+	
+    <body>
+	      
+		   
+          <header>
+		        <nav class="justify-between">   
+				   <div class="bg-red" on><img src="asset/gym.jpg" alt="logo"></div>
+				   <ul class="navbar">
+				       <li><a href="home.html"  id="myAnchor" onclick="css_mani()" >Home</a></li>
+				       <li><a href="about_us.html" id="aboutid" >About</a></li>
+				       <li><a href="services.html" id="serviceid" >Services</a></li>
+				       <li><a href="contact_us.html" id="contactid" >Contact Us</a></li>    
+				   </ul>
+				   
+				   <div class="dbtn"><button class="btn" onmouseover="bigImg(this)" onmouseout="normalImg(this)"><h2>Join Now</h2></button></div>
+				</nav>
+				 
+		  </header><hr>
+	        
+          <h1 id="serh1">Our Services Are:</h1>
+	     
+		  <section class="secservice">
+                  <div class="services">
+                       <h2 id="serviceh2">Indoor Services</h2>
+                       <ol>
+                            <li>Nutrition Plan</li>
+                            <li>Workout Plan</li>
+                            <li>Special Population</li>
+                            <li>Steam Bath/Showers</li>
+                            <li>Lockers</li>
+                            <li>Functional Training</li>
+                            <li>Bollywood Dance</li>
+                            <li>Yoga</li>
+                            <li>Kickboxing</li>
+                       </ol>
+                  </div>
+				  
+                  <div class="services">
+                       <h2 id="serviceh2">Outdoor Activities</h2>
+                       <ol>
+                           <li>Monsoon War Competition for Gym Members</li>
+                           <li>Dandiya/Garba Nights During Navratri</li>
+                           <li>Trekking With Members</li>
+                       </ol>
+                  </div>
+	     </section>
+	
+	     <footer>
+		    <div class="social-icons">
+                   <a href="#"><img src="asset/phone.png" alt="Phone"></a>
+		           <a href="#"><img src="asset/whatsapp.png" alt="WhatsApp"></a>
+		           <a href="#"><img src="asset/instagram.jfif" alt="Instagram"></a>
+                   <a href="#"><img src="asset/facebook.png" alt="Facebook"></a>
+        
+      
+            </div>
+		 
+            <div class="contact-info">
+                  <p>Sant Dyaneshwar Chowk, Pune,Maharashtra 411044</p>
+                  <p>Phone: (123) 456-7890</p>
+            </div>
+    
+	        <div class="copyright">
+                  <p>&copy; 2023 Fitness Club Gym</p>
+                  <p>Made by Komal Shivgunde</p>
+            </div>
+        </footer>
+		
+		 <script src="asset/main.js"></script>
+		
+	</body>
+</html>

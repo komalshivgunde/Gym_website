@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	     <title>about us</title>
+		<!-- <script>
+		        function bigImg(x) {
+                x.style.height = "55px";
+                x.style.width = "125px";
+                }
+                 function normalImg(x) {
+                x.style.height = "60px";
+                x.style.width = "130px";
+                }
+		  
+		  </script> -->
+		 
+		  
+		 <style>
+		          *{
+				     margin:0;
+					 padding:0;
+				 }
+				 body{
+				      background-color:	 #f5f5f5;
+				 }
+				 
+				 .navbar li{
+				         list-style: none;
+						 margin: 0 50px;
+						 font-size:25px;
+				  }	
+				 
+ 				 .justify-between{
+            			  display: flex;
+				          justify-content: space-evenly;
+					    /*  background-image: url('image.jpg');
+						  background-repeat:no-repeat;    
+	                      background-size:100%;
+	                      background-attachment:fixed;*/
+							
+				  }
+				  
+				  .navbar{
+				         display: flex;
+						 padding: 16px 31px 34px 0px; 
+						  align-items: flex-end;
+				  }
+				  
+				  nav a {
+                      text-decoration: none;
+                      color: #333;
+                      font-weight: bold;
+                  }
+				  
+				   nav a:hover{
+				      color:red;
+				  }
+				  
+				  .bg-red{
+				         display: flex;
+				         align-items: center;
+						 padding:5px 7px ;
+							
+				  }
+				  
+				  .btn{
+				         padding: 5px 7px;
+						 border: 2px solid #003399;
+						 color: white;
+						 background-color: #8787ab;
+						 border-radius:39px;
+						 cursor:pointer;
+						 height:60px;
+						 width:130px;
+						  box-sizing: border-box;
+				  }
+				  
+				  #abth1{
+				         text-align: center;
+					  margin:20px 40px;
+				  }
+				  
+				  .dbtn{
+				         display: flex;
+						 align-items:center;
+				  }
+				  
+				  #abnh2{
+				       text-align: center;
+					  margin:12px 40px;
+				  }
+				 
+		          <!--h1{
+				      text-align: center;
+					  margin:0px 40px;
+				  }
+				  
+				  h2{
+				      text-align: center;
+					  margin:12px 40px;
+				  }-->
+				  
+				  #joinbtn{
+				       margin: 0px 10px; 
+				  }
+				  
+				  .about-p{
+				           text-align:center;
+				  }
+ 
+                  .trainer-list {
+                      list-style: none;
+                      display: flex;
+					  justify-content: space-evenly;
+                     
+                  }
+
+                  .trainer-list li {
+                      text-align: center;
+					   margin-bottom: 40px;
+                  }
+
+                  .trainer-list img {
+                       max-width: 300px;
+                       border-radius: 50%;
+                       margin-bottom: 40px;
+                  }
+
+                  .ceo-profile{
+                       max-width: 300px;
+                       border-radius: 50%;
+                       margin-bottom: 10px;
+					   display: block;
+                       margin-left: auto;
+                       margin-right: auto;
+  
+                  }
+				  
+				  footer {
+                       background-color: #e6e6e6;
+                       padding: 20px;
+                       text-align: center;
+                  }
+
+                 .social-icons a {
+                      display: inline-block;
+                      margin: 0 10px;
+                 }
+
+                 .social-icons img {
+                      width: 30px;
+                      height: 30px;
+	                  border-radius: 50px;
+                 }
+
+                 .contact-info p {
+                      margin: 5px 0;
+                      font-size: 14px;
+                 }
+
+                 .copyright p {
+                      margin: 5px 0;
+                      font-size: 12px;
+                      color: #777;
+                 }
+		 
+		 </style>
+		
+    </head>
+	
+	<body>
+	       
+		  
+		  <header>
+		        <nav class="justify-between">   
+				   <div class="bg-red" on><img src="asset/gym.jpg" alt="logo"></div>
+				   <ul class="navbar">
+				       <li><a href="home.html"  id="myAnchor" onclick="css_mani()">Home</a></li>
+				       <li><a href="about_us.html" id="aboutid"  >About</a></li>
+				       <li><a href="services.html" id="serviceid" >Services</a></li>
+				       <li><a href="contact_us.html" id="contactid" >Contact Us</a></li>
+				       
+				   </ul>
+				   <div class="dbtn"><button class="btn" onmouseover="bigImg(this)" onmouseout="normalImg(this)"><h2 id="joinbtn">Join Now</h2></button></div>
+				</nav>
+				 
+		  </header><hr>
+		 
+		 <section>
+                <h1 id="abth1">About Us</h1>
+		        <div class="about-p">
+                     <p>Fitness Club Gym is dedicated to helping you achieve your fitness goals in a welcoming and supportive environment.</p> 
+		             <p>With a team of experienced trainers and state-of-the-art equipment, we provide a variety of fitness programs</p>
+		             <p>tailored to your needs.</p>
+                     <p>Our mission is to inspire and empower our members to lead healthier lives through exercise and wellness.</p>
+		             <p>Whether you're a beginner or an experienced athlete, we have the resources to help you succeed on your</p> 
+		             <p>fitness journey.</p>
+                </div>
+		        <h2>Meet Our Trainers</h2>
+                <ul class="trainer-list">
+                       <li>
+                           <img src="asset/trainer.jpg" alt="Trainer 1">
+                           <h2 id="abnh2">John Doe</h2>
+                           <p>Certified Personal Trainer</p>
+                       </li>
+                       <li>
+                           <img src="asset/trainer2.jpg" alt="Trainer 2">
+                           <h2 id="abnh2">Jane Smith</h2>
+                           <p>Fitness Coach</p>
+                       </li>
+                </ul>
+		 </section>
+		 <section>
+                <h2>Meet Our Founder</h2>
+                <div class="ceo-profile">
+                     <img src="asset/ceo.jpg" alt="Founder"/>
+				</div>
+                      
+				<div class="ceo-hp"> 
+				     <h2 style="text-align:center;">Mary Johnson</h2>
+                      <p style="text-align:center;">CEO and Founder</p>
+                </div>
+		</section>
+
+		<footer>
+		         
+                <div class="social-icons">
+                     <a href="#"><img src="asset/phone.png" alt="Phone"></a>
+		             <a href="#"><img src="asset/whatsapp.png" alt="WhatsApp"></a>
+		             <a href="#"><img src="asset/instagram.jfif" alt="Instagram"></a>
+                     <a href="#"><img src="asset/facebook.png" alt="Facebook"></a>
+                </div>
+    
+	           <div class="contact-info">
+                    <p>Sant Dyaneshwar Chowk, Pune,Maharashtra 411044</p>
+                    <p>Phone: (123) 456-7890</p>
+              </div>
+           
+		      <div class="copyright">
+                    <p>&copy; 2023 Fitness Club Gym</p>
+                    <p>Made by Komal Shivgunde</p>
+              </div>
+     
+	    </footer>
+		
+		<script src="asset/main.js">
+		  </script>
+		
+    </body>
+</html>

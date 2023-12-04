@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	
+	      <title>Fitness Club</title>
+		<!--  <script>
+		        function bigImg(x) {
+                x.style.height = "55px";
+                x.style.width = "125px";
+                }
+                 function normalImg(x) {
+                x.style.height = "60px";
+                x.style.width = "130px";
+                }
+		  
+		  </script>  -->
+		 
+		  
+		  <style>
+		         /*@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap');*/
+		  
+		         *{
+				     margin:0;
+					 padding:0;
+				 }
+				 body{
+				      background-color:	 #f5f5f5;
+				 }
+				 .navbar li{
+				         list-style: none;
+						 margin: 0 50px;
+						 font-size:25px;
+				  }	
+				 
+ 				 .justify-between{
+            			  display: flex;
+				          justify-content: space-evenly;
+					    /*  background-image: url('image.jpg');
+						  background-repeat:no-repeat;    
+	                      background-size:100%;
+	                      background-attachment:fixed;*/
+							
+				  }
+				  
+				 .navbar{
+				         display: flex;
+						 padding: 16px 31px 34px 0px; 
+						  align-items: flex-end;
+				  }
+				  
+				  nav a {
+                      text-decoration: none;
+                      font-weight: bold;
+                  }
+				  
+				  nav a:hover{
+				      color:red;
+				  }
+				  
+				  .bg-red{
+				         display: flex;
+				         align-items: center;
+						 padding:5px 7px ;
+							
+				  }
+				  
+				  .btn{
+				         padding: 4px 12px;
+						 border: 2px solid #333333;
+						 color: white;
+						 background-color: #8787ab;
+						 border-radius:39px;
+						 cursor:pointer;
+						 height:60px;
+						 width:130px;
+				  }
+				  
+				  .dbtn{
+				         display: flex;
+						 align-items:center;
+				  }
+				  
+				  .topleft{
+				         width:50%;
+						 display: flex;
+						  align-items: center;
+						  margin:72px 20px;
+						 
+				  }
+				  
+				  .topright{
+				         width:50%;
+						 display: flex;
+						  align-items: center;
+						  
+						 
+				  }
+				  
+				  .flex{
+				         display: flex;
+					     align-items: center;
+						 flex-direction: column;
+				  }
+				  
+				  .section1{
+				        min-height:65vh;
+						background-image: url('asset/gym2.jpg');
+				    	background-repeat:no-repeat;    
+	                    background-size:100%;
+	                    background-attachment:local;
+				
+				  }
+				  
+				  #ps2{
+				         padding:26px 61px;
+				  }
+				  
+				  #hs2{
+				              font-size:2rem;
+							  text-align:center;
+							  margin-top:15px;
+							  margin-bottom:15px;
+				  }
+				  
+				  .section2{
+				             padding-left: 63px;
+							 padding-right: 63px;
+				  
+				  }
+				  
+				  .flex-container {
+                             display: flex;
+                            flex-wrap: nowrap;
+                            
+                  }
+				  .box{
+				       margin:12px 22px;
+					   min-witdh:20vw;
+					   border: 1px solid #81817e;
+					   display: flex;
+					   justify-content:flex-start;
+					   flex-direction:column;
+					    background-color: #d9d9d9;
+					   box-shadow: 5px 10px 5px #888888;
+					   border-radius:5px;
+				  }
+				  
+				   .btn2{
+				         padding: 4px 12px;
+						 border: 1px solid #60609f;
+						 color: white;
+						 background-color: #8787ab;
+						 border-radius:30px;
+						 cursor:pointer;
+						 box-shadow: 5px 10px 5px #888888;
+				  }
+				  
+				   .box ul{
+				           list-style-type:none;
+				   }
+				  
+				  .box ul li{
+				        margin:12px 2px;
+				  }
+				  
+				  
+                  footer {
+                       background-color: #e6e6e6;
+                       padding: 20px;
+                       text-align: center;
+                  }
+
+                 .social-icons a {
+                       display: inline-block;
+                       margin: 0 10px;
+                  }
+
+                 .social-icons img {
+                       width: 30px;
+                       height: 30px;
+	                   border-radius: 50px;
+                  }
+
+                 .contact-info p {
+                       margin: 5px 0;
+                       font-size: 14px;
+                 }
+
+                 .copyright p {
+                       margin: 5px 0;
+                       font-size: 12px;
+                       color: #777;
+                 }
+		 
+				  		  
+		   </style>
+	 </head>
+	
+	<body>
+		  
+	      <div class="container mx-auto">
+		  <header>
+		        <nav class="justify-between">   
+				   <div class="bg-red" on><img src="asset/gym.jpg" alt="logo"></div>
+				   <ul class="navbar">
+				       <li><a href="home.html" id="myAnchor" onclick="css_mani()">Home</a></li>
+				       <li><a href="about_us.html" id="aboutid"  >About</a></li>
+				       <li><a href="services.html" id="serviceid" >Services</a></li>
+				       <li><a href="contact_us.html" id="contactid" >Contact Us</a></li>
+				       
+				   </ul>
+				   <div class="dbtn"><button class="btn" onmouseover="bigImg(this)" onmouseout="normalImg(this)"><h2>Join Now</h2></button></div>
+				</nav>
+				 
+		  </header>
+		  <hr>
+		  <main class="main-screen" >
+		      <section class="section1">
+			       <div class="flex">
+				       <div class="topleft">
+				        <h1>PUNE'S BEST GYM FOR FAT LOSS AND MUSCLE GAIN</h1>
+						
+					   </div>
+					   <div class="topright">
+					   
+					   <p>Fitness Club - Push Your Limits, We Empower You To 
+						  Push Your Limit And Reach Your Aims In A Positive, 
+						  Energetic Ambiance. Our Nice Members And Best 
+						  Trainers Contribute To Building A Welcoming 
+						  Community That Loves Being Active Together.
+						  Come Join Us Today.</p>
+					   </div>
+				   </div>
+				    <!--<div class="iright"><img src="gym1.jpg" alt="gym"></div>-->
+			  </section>
+			 
+		      <section class="section2">
+			       <h1 id="hs2">Membership Pricing</h1>
+				   
+				   <p id="ps2">Getting in shape should not cost a fortune.
+				   We are incredibly flexible in our approach to 
+				   budget-friendly fitness and offer various membership 
+				   plans to help you get started. Joining Fitranger 
+				   Gym is an investment, and we are confident that 
+				   you will not be disappointed by your results.
+				   We offer value for money!</p>
+				   <div class="flex-container">
+			           <div class="box">
+					         <h2 style="text-align:center;">12 months</h2>
+					         <h3 style="text-align:center;">Annual Membership</h3>
+							 <ul>
+							      <li>&#x2705;Unlimited Access</li>
+                                  <li>&#x2705;Gym + Cardio</li>
+                                  <li>&#x2705;Rooftop Access</li>
+                                  <li>&#x2705;15+ Group Classes Every Week</li>
+                                  <li>&#x2705;Body Comp</li>
+                                  <li>&#x2705;Workout Program</li>
+                                  <li>&#x2705;Diet Plan x 2</li>
+                                  <li>&#x2705;Free Extension upto 30 Days (Freeze)</li>
+                                  <li>&#x2705;Membership Transfer</li>
+								  <li><button class="btn2">Enquiry Now</button></li>
+							 </ul>
+					   </div>
+					   
+				       <div class="box">
+					          <h2 style="text-align:center;">6 months</h2>
+					         <h3 style="text-align:center;">Half-Yearly Membership</h3>
+							 <ul>
+							      <li>&#x2705;Unlimited Access</li>
+                                  <li>&#x2705;Gym + Cardio</li>
+                                  <li>&#x2705;Rooftop Access</li>
+                                  <li>&#x2705;15+ Group Classes Every Week</li>
+                                  <li>&#x2705;Body Comp</li>
+                                  <li>&#x2705;Workout Program</li>
+                                  <li>&#x2705;Diet Plan x 1</li>
+                                  <li>&#x2705;Free Extension upto 30 Days (Freeze)</li>
+                                  <li>&#9746;Membership Transfer</li>
+								  <li><button class="btn2">Enquiry Now</button></li>
+							 </ul>
+					   </div>
+					   
+				       <div class="box">
+					         <h2 style="text-align:center;">3 months</h2>
+					         <h3 style="text-align:center;">Quarterly Membership</h3>
+							 <ul>
+							      <li>&#x2705;Unlimited Access</li>
+                                  <li>&#x2705;Gym + Cardio</li>
+                                  <li>&#x2705;Rooftop Access</li>
+                                  <li>&#x2705;15+ Group Classes Every Week</li>
+                                  <li>&#x2705;Body Comp</li>
+                                  <li>&#x2705;Workout Program</li>
+                                  <li>&#9746;Diet Plan x 1</li>
+                                  <li>&#9746;Free Extension upto 30 Days (Freeze)</li>
+                                  <li>&#9746;Membership Transfer</li>
+								  <li><button class="btn2">Equiry Now</button></li>
+							 </ul>
+					   </div>
+					      <div class="box">
+					         <h2 style="text-align:center;">1 months</h2>
+					         <h3 style="text-align:center;">Monthly Membership</h3>
+							 <ul>
+							      <li>&#x2705;Unlimited Access</li>
+                                  <li>&#x2705;Gym + Cardio</li>
+                                  <li>&#x2705;Rooftop Access</li>
+                                  <li>&#x2705;15+ Group Classes Every Week</li>
+                                  <li>&#x2705;Body Comp</li>
+                                  <li>&#9746;Workout Program</li>
+                                  <li>&#9746;Diet Plan x 1</li>
+                                  <li>&#9746;Free Extension upto 30 Days (Freeze)</li>
+                                  <li>&#9746;Membership Transfer</li>
+								  <li><button class="btn2">Enquiry Now</button></li>
+							 </ul>
+					   </div>
+				    </div>
+			  </section>
+			  
+		  </main>
+		  <footer>
+		         
+              <div class="social-icons">
+                   <a href="#"><img src="asset/phone.png" alt="Phone"></a>
+		           <a href="#"><img src="asset/whatsapp.png" alt="WhatsApp"></a>
+		           <a href="#"><img src="asset/instagram.jfif" alt="Instagram"></a>
+                   <a href="#"><img src="asset/facebook.png" alt="Facebook"></a>
+        
+      
+             </div>
+             <div class="contact-info">
+                  <p>Sant Dyaneshwar Chowk, Pune,Maharashtra 411044</p>
+                  <p>Phone: (123) 456-7890</p>
+             </div>
+             
+			 <div class="copyright">
+                 <p>&copy; 2023 Fitness Club Gym</p>
+                 <p>Made by Komal Shivgunde</p>
+             </div>
+		  
+		  </footer>
+		  </div>
+		  
+		  <script src="asset/main.js"></script>
+	 </body>
+
+</html>
